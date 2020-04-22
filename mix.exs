@@ -14,6 +14,7 @@ defmodule Policies.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       test_coverage: [tool: ExCoveralls],
+      package: package(),
       name: "Policies",
       description: "Policies a wrapper to work with current_user.",
       source_url: "https://github.com/paridin/policies",
@@ -24,6 +25,13 @@ defmodule Policies.MixProject do
         # logo: "logo.png",
         extras: ["README.md"]
       ]
+    ]
+  end
+
+  defp package do
+    [
+      licenses: ["Apache-2.0"],
+      links: %{}
     ]
   end
 
