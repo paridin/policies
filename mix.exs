@@ -13,7 +13,17 @@ defmodule Policies.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      test_coverage: [tool: ExCoveralls]
+      test_coverage: [tool: ExCoveralls],
+      name: "Policies",
+      description: "Policies a wrapper to work with current_user.",
+      source_url: "https://github.com/paridin/policies",
+      homepage_url: "https://paridin.com",
+      docs: [
+        # The main page in the docs
+        main: "Policies",
+        # logo: "logo.png",
+        extras: ["README.md"]
+      ]
     ]
   end
 
@@ -35,7 +45,8 @@ defmodule Policies.MixProject do
       {:phoenix, "~> 1.4.0"},
       {:policy_wonk, "~> 1.0.0"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false},
     ]
   end
 end
