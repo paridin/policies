@@ -40,7 +40,7 @@ defmodule Policies.Access do
   end
 
   def policy_error(conn, {:login_required, message}) do
-    Policies.ErrorHandlers.unauthenticated(conn, "/session", message)
+    Policies.ErrorHandlers.unauthenticated(conn, "/login", message)
   end
 
   def in_roles(role, roles) do
