@@ -27,4 +27,5 @@ policies-*.tar
 cover
 
 .elixir_ls
+.vscode
 
