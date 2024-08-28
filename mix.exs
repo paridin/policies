@@ -1,10 +1,11 @@
 defmodule Policies.MixProject do
+  @moduledoc false
   use Mix.Project
 
   def project do
     [
       app: :policies,
-      version: "0.1.1",
+      version: "0.1.2",
       build_path: "_build",
       config_path: "config/config.exs",
       deps_path: "deps",
@@ -50,7 +51,7 @@ defmodule Policies.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:phoenix, "~> 1.4.0"},
+      {:phoenix, "~> 1.4"},
       {:policy_wonk, "~> 1.0.0"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
